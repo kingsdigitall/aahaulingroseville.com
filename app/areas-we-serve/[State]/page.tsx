@@ -1,28 +1,15 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import content from "@/components/Content/subDomainUrlContent.json";
-import Link from "next/link";
 import Banner from "@/app/components/Home/Banner";
 import Service from "@/app/components/Home/Service";
 import ContactInfo from "@/components/Content/ContactInfo.json";
-import { Metadata } from "next";
-import ReviewSlider from "@/app/components/ReviewSlider";
-import { FaPhoneSquareAlt } from "react-icons/fa";
-import CtaState from "@/app/components/CtaState";
-import ServiceSlider from "@/app/components/Home/ServiceSlider";
-import CtaWidget from "@/app/components/CtaWidget";
-import ZipAndNeighAccordian from "@/app/components/Home/ZipAndNeighAccordian";
 import Faq from "@/app/components/Home/Faq";
-import CounterCta from "@/app/components/Widgets/CounterCta";
-import HourCta from "@/app/components/Home/HourCta";
-import Guarantees from "@/app/components/Widgets/Guarantees";
 import ReviewWidget from "@/app/components/Widgets/ReviewWidget";
-import data from "@/components/Content/serviceWidgetContent.json";
-import Types from "@/app/components/Widgets/Types";
 import Affordable from "@/app/components/Home/Affordable";
 import ProcessWidget from "@/app/components/Widgets/ProcessWidget";
 import AreaWeServe from "@/app/components/Widgets/AreaWeServe";
-import NavbarState from "@/app/components/State/NavbarState";
+import HourCta from "@/app/components/Home/HourCta";
 // import Service from "@/app/Components/Service";
 
 interface SubdomainPageProps {
@@ -86,7 +73,7 @@ export default function SubdomainPage({ params }: SubdomainPageProps) {
       {/* <p>{subDomain.map((item:any)=>(
         <p>{item}</p>
       ))}</p> */}
-      <div className="mt-14 grid w-full grid-cols-1 gap-6  px-6 md:mt-28 md:grid-cols-2 md:px-24 items-center">
+      <div className="mt-14 grid w-full grid-cols-1 items-center  gap-6 px-6 md:mt-28 md:grid-cols-2 md:px-24">
         <div className=" h-full">
           <Image
             height={1000}
@@ -96,37 +83,37 @@ export default function SubdomainPage({ params }: SubdomainPageProps) {
             alt={ContentData?.h2Image.split(".")[0]}
           />
         </div>
-          <div className=" flex w-full flex-col gap-3 ">
-            <span className="text-sm font-bold text-main">
-              {ContentData?.name} {ContactInfo.name}{" "}
-              Services
-            </span>
-            <h2 className="text-3xl font-bold">{ContentData?.h2}</h2>
+        <div className=" flex w-full flex-col gap-3 ">
+          <span className="text-sm font-bold text-main">
+            {ContentData?.name} {ContactInfo.name} Services
+          </span>
+          <h2 className="text-3xl font-bold">{ContentData?.h2}</h2>
 
-            <div
-              className="mt-3  text-justify"
-              dangerouslySetInnerHTML={{ __html: ContentData?.p2 }}
-            ></div>
-            <div className="gap-4 md:flex">
-              <div className="rounded-lg bg-gray-100 p-4 shadow-lg">
-                <h4 className="text-xl font-bold">
-                  Residential {ContactInfo.name} Services
-                </h4>
-                <p>
-                  Professional Residential {ContactInfo.service} in{" "}
-                  {ContentData?.name}, {State.split("-").pop()?.toUpperCase()}.
-                </p>
-              </div>
-              <div className="rounded-lg bg-gray-100 p-4 shadow-lg">
-                <h4 className="text-xl font-bold">
-                  Commercial {ContactInfo.name} Services
-                </h4>
-                <p>
-                  Commercial {ContactInfo.service} in {ContentData?.name}, {State.split("-").pop()?.toUpperCase()}.
-                </p>
-              </div>
+          <div
+            className="mt-3  text-justify"
+            dangerouslySetInnerHTML={{ __html: ContentData?.p2 }}
+          ></div>
+          <div className="gap-4 md:flex">
+            <div className="rounded-lg bg-gray-100 p-4 shadow-lg">
+              <h4 className="text-xl font-bold">
+                Residential {ContactInfo.name} Services
+              </h4>
+              <p>
+                Professional Residential {ContactInfo.service} in{" "}
+                {ContentData?.name}, {State.split("-").pop()?.toUpperCase()}.
+              </p>
+            </div>
+            <div className="rounded-lg bg-gray-100 p-4 shadow-lg">
+              <h4 className="text-xl font-bold">
+                Commercial {ContactInfo.name} Services
+              </h4>
+              <p>
+                Commercial {ContactInfo.service} in {ContentData?.name},{" "}
+                {State.split("-").pop()?.toUpperCase()}.
+              </p>
             </div>
           </div>
+        </div>
       </div>
       {/* Section 1 */}
       {/* Section 2 */}
@@ -354,11 +341,13 @@ export default function SubdomainPage({ params }: SubdomainPageProps) {
       {/* Area we Serve */}
       {slugs.length > 0 && (
         <div id="area-we-serve" className="pt-14 md:pt-28">
-        <h2 className={`  text-center text-3xl font-bold text-main`}>Cities We Serve </h2>
-        <AreaWeServe slugs={slugs} />
-      </div>
-    )}
-      
+          <h2 className={`  text-center text-3xl font-bold text-main`}>
+            Cities We Serve{" "}
+          </h2>
+          <AreaWeServe slugs={slugs} />
+        </div>
+      )}
+
       {/* Area we Serve */}
       {/* Neighborhood */}
       {/* {ContentData?.neighbourhoods ? (

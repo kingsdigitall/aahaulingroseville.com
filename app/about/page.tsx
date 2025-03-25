@@ -5,7 +5,6 @@ import Banner from "@/app/components/Home/Banner";
 import contentData from "@/components/Content/about.json";
 import ContactInfo from "@/components/Content/ContactInfo.json";
 
-
 export const metadata: Metadata = {
   title: {
     absolute: contentData.metaTitle,
