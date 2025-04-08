@@ -1,7 +1,7 @@
 "use client";
+import { Link } from "lucide-react";
 import React, { useState } from "react";
 import ContactInfo from "@/components/Content/ContactInfo.json";
-import Link from "next/link";
 
 const AreaWeServe = ({ slugs }: any) => {
   const [showAll, setShowAll] = useState(false);
@@ -23,22 +23,21 @@ const AreaWeServe = ({ slugs }: any) => {
         .map((City: any, index: number) => {
           return (
             <div className="" key={index}>
-              <Link href={`/areas-we-serve/${City.slug}`} className="text-center">
-                <button
-                  type="button"
-                  className="mb-2 me-2 rounded-lg bg-main px-5 py-2.5 text-xs font-medium text-white hover:bg-main/90 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+              <a href={`/areas-we-serve/${City.slug}`} className="text-center">
+                <h3
+                  className="mb-2 me-2 rounded-lg bg-main px-5 py-2.5 text-xs font-semibold text-white  hover:-translate-y-2 focus:outline-none  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                 >
                   {City.name}{" "}
                   {City.zipCodes && ` ${City.zipCodes.split("|")[0]}`}
-                </button>
-              </Link>
+                </h3>
+              </a>
             </div>
           );
         })}
       {!showAll && slugs.length > initialCount && (
         <button
           onClick={handleReadMore}
-          className="mb-2 me-2 rounded-lg bg-minor px-5 py-2.5 text-xs font-medium text-white hover:bg-minor/90 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+          className="mb-2 me-2 rounded-lg bg-minor px-5 py-2.5 text-xs font-medium text-white hover:bg-minor/90 focus:outline-none  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
         >
           View All
         </button>
@@ -46,7 +45,7 @@ const AreaWeServe = ({ slugs }: any) => {
       {showAll && (
         <button
           onClick={handleShowLess}
-          className="mb-2 me-2 rounded-lg bg-minor px-5 py-2.5 text-xs font-medium text-white hover:bg-minor/90 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+          className="mb-2 me-2 rounded-lg bg-minor px-5 py-2.5 text-xs font-medium text-white hover:bg-minor/90 focus:outline-none  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
         >
           <a href="#area-we-serve">Show Less</a>
         </button>

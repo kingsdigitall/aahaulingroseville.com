@@ -5,11 +5,11 @@ import Banner from "@/app/components/Home/Banner";
 import Service from "@/app/components/Home/Service";
 import ContactInfo from "@/components/Content/ContactInfo.json";
 import Faq from "@/app/components/Home/Faq";
+import HourCta from "@/app/components/Home/HourCta";
 import ReviewWidget from "@/app/components/Widgets/ReviewWidget";
 import Affordable from "@/app/components/Home/Affordable";
 import ProcessWidget from "@/app/components/Widgets/ProcessWidget";
 import AreaWeServe from "@/app/components/Widgets/AreaWeServe";
-import HourCta from "@/app/components/Home/HourCta";
 // import Service from "@/app/Components/Service";
 
 interface SubdomainPageProps {
@@ -24,11 +24,10 @@ export function generateMetadata({ params }: SubdomainPageProps) {
     title: ContentData?.metaTitle,
     description: ContentData?.metaDescription,
     alternates: {
-      canonical: `${ContactInfo.baseUrl}areas-we-serve/${State}/`,
+      canonical: `https://${ContactInfo.host}/areas-we-serve/${State}/`,
     },
   };
 }
-
 interface CityData {
   slug: string;
   bannerText: string;
@@ -61,8 +60,79 @@ export default function SubdomainPage({ params }: SubdomainPageProps) {
     .filter((key) => key !== State)
     .map((key) => cityData[key]);
   // console.log(ContentData)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: `${ContactInfo.name}`,
+    image:
+      `${ContactInfo.logo}` || "",
+    "@id": `${ContactInfo.baseUrl}`,
+    url: `${ContactInfo.baseUrl}`,
+    telephone: `${ContactInfo.No}`,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: ContactInfo.address.split(",")[0].trim(),
+      addressLocality: ContactInfo.location.split(",")[0].trim(),
+      addressRegion: ContactInfo.location.split(",")[1].trim(),
+      postalCode: ContactInfo.zipCode.trim(),
+      addressCountry: "United States",
+    },
+    areaServed: {
+      "@type": "Place",
+      name: `${ContentData?.name}`,
+      address: {
+        "@type": "PostalAddress",
+        postalCode: `${ContentData?.zipCodes.split("|")[0]}`,
+        addressRegion: `${State.split("-").pop()?.toUpperCase()}`,
+        addressCountry: "United States",
+      },
+    },
+    priceRange: "$$",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        opens: "10:30",
+        closes: "12:32",
+      },
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: 4,
+      reviewCount: 79,
+    },
+    potentialAction: {
+      "@type": "ReserveAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "#book_now",
+        inLanguage: "en-US",
+        actionPlatform: [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform",
+        ],
+      },
+      result: {
+        "@type": "Reservation",
+        name: `https://${ContactInfo.host}#Appointment`,
+      },
+    },
+  };
   return (
     <div className="mx-auto max-w-[2100px] overflow-hidden">
+    <section>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </section>
       <Banner
         h1={`${ContentData.h1Banner} ${ContentData.zipCodes && ContentData.zipCodes.split("|")[0]}`}
         image={ContentData.bannerImage}
@@ -78,9 +148,9 @@ export default function SubdomainPage({ params }: SubdomainPageProps) {
           <Image
             height={1000}
             width={1000}
-            src={`/${ContentData?.h2Image}`}
+            src={`${ContentData?.h2Image}`}
             className="h-full w-full  rounded-lg object-cover shadow-lg"
-            alt={ContentData?.h2Image.split(".")[0]}
+            alt={ContentData?.h2Image.split("/").pop()?.split(".")[0] || "image"}
           />
         </div>
         <div className=" flex w-full flex-col gap-3 ">
@@ -99,7 +169,7 @@ export default function SubdomainPage({ params }: SubdomainPageProps) {
                 Residential {ContactInfo.name} Services
               </h4>
               <p>
-                Professional Residential {ContactInfo.service} in{" "}
+                Professional Residential Dumpster Rental Services in{" "}
                 {ContentData?.name}, {State.split("-").pop()?.toUpperCase()}.
               </p>
             </div>
@@ -108,7 +178,7 @@ export default function SubdomainPage({ params }: SubdomainPageProps) {
                 Commercial {ContactInfo.name} Services
               </h4>
               <p>
-                Commercial {ContactInfo.service} in {ContentData?.name},{" "}
+                Commercial Dumpster Rental Services in {ContentData?.name},{" "}
                 {State.split("-").pop()?.toUpperCase()}.
               </p>
             </div>
@@ -152,9 +222,9 @@ export default function SubdomainPage({ params }: SubdomainPageProps) {
                     className=" 1 rounded-md border p-4 shadow-md "
                     key={index}
                   >
-                    <div className="1 text-center text-xl font-bold text-minor">
+                    <h3 className="1 text-center text-xl font-bold text-minor">
                       {item.title}
-                    </div>
+                    </h3>
                     <div className="mt-4 text-lg">{item.description}</div>
                   </div>
                 );
@@ -347,76 +417,6 @@ export default function SubdomainPage({ params }: SubdomainPageProps) {
           <AreaWeServe slugs={slugs} />
         </div>
       )}
-
-      {/* Area we Serve */}
-      {/* Neighborhood */}
-      {/* {ContentData?.neighbourhoods ? (
-        <div className="">
-          <div className="block border px-4 md:hidden">
-            <ZipAndNeighAccordian
-              ques={`Neighborhoods we serve in  ${ContentData?.name}`}
-              ans={ContentData?.neighbourhoods.split("|")}
-              slug={ContentData?.slug}
-            />
-          </div>
-          <div className="mt-28 hidden items-center justify-start md:mx-40 md:block ">
-            <div className="text-center text-3xl font-bold">
-              <p className="text-main">
-                Neighborhoods we serve in {ContentData?.name}
-              </p>
-            </div>
-            <div className="mx-10 mt-4 flex h-fit w-auto flex-wrap justify-center gap-4">
-              {ContentData?.neighbourhoods.split("|").map((item: any) => (
-                <div className="" key={item}>
-                  <a
-                    target="_blank"
-                    href={`https://www.google.com/maps/search/?api=1&query=${item}, ${ContentData?.slug},`}
-                  >
-                    <p className="border bg-minor px-2 py-1 text-white duration-100 ease-in-out hover:text-main">
-                      {item}
-                    </p>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      ) : null} */}
-      {/* Neighborhood */}
-      {/* Zip */}
-      {/* {ContentData?.zipCodes ? (
-        <div className="">
-          <div className="block border px-4 md:hidden">
-            <ZipAndNeighAccordian
-              ques={` Zip Codes we serve in ${ContentData?.name}`}
-              ans={ContentData?.zipCodes.split("|")}
-              slug={ContentData?.slug}
-            />
-          </div>
-          <div className="mt-28 hidden items-center justify-start md:mx-40 md:block  ">
-            <div className="text-center text-3xl font-bold">
-              <p className="text-main">
-                Zip&nbsp;Codes we serve in {ContentData?.name}
-              </p>
-            </div>
-            <div className="mx-10 mt-4 flex h-fit w-auto flex-wrap justify-center gap-4">
-              {ContentData?.zipCodes.split("|").map((item: any) => (
-                <div className="" key={item}>
-                  <Link
-                    target="_blank"
-                    href={`https://www.google.com/maps/search/?api=1&query=${item}, ${ContentData?.slug},`}
-                  >
-                    <p className="border bg-minor px-2 py-1 text-white duration-100 ease-in-out hover:text-main">
-                      {item}
-                    </p>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      ) : null} */}
-      {/* Zip */}
       {/* FAQ */}
       {ContentData?.faq ? <Faq value={State} /> : null}
       {/* FAQ */}

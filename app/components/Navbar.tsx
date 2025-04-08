@@ -18,9 +18,9 @@ const Navbar = () => {
         <div className=" relative w-screen md:w-full md:max-w-[1280px] md:px-10  md:py-4">
           <div className="mt-0 flex flex-row justify-between space-x-8 rounded-2xl rounded-tr-none text-sm font-medium md:mr-6 md:justify-around px-4">
             <div className="flex">
-              <Link href="/" aria-label="Home">
+              <Link href={ContactInfo?.baseUrl} aria-label="Home">
                 <Image
-                  src="/logo.png"
+                  src={ContactInfo.logo}
                   className=" md:mr-3 w-40 md:w-40 h-full object-contain "
                   alt="logo of the company"
                   title=""
