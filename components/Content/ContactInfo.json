@@ -1,10 +1,14 @@
 {
-    "No": "(303) 551-9552",
-    "tel": "3035519552",
-    "mail": "",
-    "baseUrl": "https://aahaulingroseville.com/",
-    "host": "aahaulingroseville.com",
-    "name": "Roseville Junk Removal & Hauling Expert",
-    "address": "2977 Civic Center Blvd, Roseville, MI 48066, United States",
-    "service":"Junk Removal & Haul service"
+  "No": "(877) 317-4633",
+  "tel": "8773174633",
+  "mail": "",
+  "baseUrl": "https://aahaulingroseville.com/",
+  "host": "aahaulingroseville.com",
+  "name": "Roseville Junk Removal & Hauling Expert",
+  "address": "101 Creekside Ridge Ct Suite 210, Roseville, MI 48066 United States",
+  "service": "Junk Removal & Haul service",
+  "location": "Roseville, MI",
+  "zipCode": "48066",
+  "bannerImage": "https://ik.imagekit.io/serviceproviders/aahaulingroseville.com/banner.jpg?updatedAt=1744108335388",
+  "logo": "https://ik.imagekit.io/serviceproviders/aahaulingroseville.com/logo.png?updatedAt=1744108343666"
 }

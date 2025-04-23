@@ -1,12 +1,12 @@
 {
   "metaTitle": "Roseville’s Trusted Junk Removal Experts | Fast Hauling",
-  "metaDescription": "Looking for reliable junk removal in Roseville? We provide fast, affordable, and eco-friendly hauling services. Call now for a clutter-free space!",
+  "metaDescription": "Looking for reliable junk removal in Roseville? We provide fast, affordable, and eco-friendly hauling services. Call us at (877) 317-4633 for a clutter-free space!",
   "bannerQuote": "",
   "bannerImage": "banner.jpg",
   "h1Banner": "About Us – Roseville’s Trusted Junk Removal Experts",
   "p1Banner": "",
   "p2": "We take pride in being Roseville’s go-to junk removal and hauling service since 2001. With over 20 years of experience, we have built a reputation for honesty, efficiency, and eco-friendly waste disposal. Whether it’s a small household cleanup or a large-scale property cleanout, our licensed and insured team is ready to help.<br/><br/>We believe in making junk removal hassle-free, affordable, and environmentally responsible. By prioritizing recycling and donations, we ensure that unwanted items find a second life whenever possible, reducing landfill waste and helping the community.",
-  "h2Image": "garbage-collection-day-2024-03-05-20-00-16-utc_10_11zon.jpg",
+  "h2Image": "https://ik.imagekit.io/serviceproviders/aahaulingroseville.com/garbage-collection-day-2024-03-05-20-00-16-utc_10_11zon.jpg?updatedAt=1744108342327",
   "missionSection": [
     {
       "title": "Our Mission",
@@ -24,6 +24,6 @@
   "areaweserveSection": {
     "description": "We serve all across the Meridian",
     "linkText": "Check our Junk Removal & Hauling service locations here.",
-    "link": "/locations"
+    "link": "/areas-we-serve/"
   }
 }

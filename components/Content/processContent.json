@@ -1,23 +1,22 @@
 {
-      "title": "Our 4-Step Junk Removal Process",
-      "description": "",
-      "steps": [
-        {
-          "title": "Step 1: Schedule Your Pickup",
-          "description": "Call or book online for a convenient appointment."
-        },
-        {
-          "title": "Step 2: Get a Free Quote",
-          "description": "Upfront, no-obligation pricing with no hidden fees."
-        },
-        {
-          "title": "Step 3:  We Do the Heavy Lifting",
-          "description": "Our team removes and loads everything for you."
-        },
-        {
-          "title": "Step 4: Eco-Friendly Disposal",
-          "description": "We recycle, donate, and dispose of junk responsibly."
-        }
-      ]
+  "title": "Our 4-Step Junk Removal Process",
+  "description": "",
+  "steps": [
+    {
+      "title": "Step 1: Schedule Your Pickup",
+      "description": "Call or book online for a convenient appointment."
+    },
+    {
+      "title": "Step 2: Get a Free Quote",
+      "description": "Upfront, no-obligation pricing with no hidden fees."
+    },
+    {
+      "title": "Step 3:  We Do the Heavy Lifting",
+      "description": "Our team removes and loads everything for you."
+    },
+    {
+      "title": "Step 4: Eco-Friendly Disposal",
+      "description": "We recycle, donate, and dispose of junk responsibly."
     }
-    
+  ]
+}
