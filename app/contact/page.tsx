@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 const page = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-white text-black">
@@ -39,7 +38,9 @@ const page = () => {
                 src={`${contentData.h2Image}`}
                 width={500}
                 height={400}
-                alt={contentData.h2Image.split("/").pop()?.split(".")[0] || "image"}
+                alt={
+                  contentData.h2Image.split("/").pop()?.split(".")[0] || "image"
+                }
                 className="object-cover"
               />
               <div className="flex flex-col items-center justify-center">
@@ -70,15 +71,15 @@ const page = () => {
         {/* Let's Start a Conversation */}
         <div className="mt-16">
           <div className="text-center text-4xl font-extrabold text-main">
-            Let&apos;s Start a Conversation
+            Have a business enquiry? Contact us today!
           </div>
           <div className="border-double text-center">
-            <a id="cta-id" href={`tel:${ContactInfo.tel}`}>
+            <a id="cta-id" href={`mailto:${ContactInfo.mail}`}>
               <button
                 id="cta-id"
                 className="mt-3 rounded-lg bg-main px-4 py-3 font-bold tracking-wide text-white shadow-lg hover:bg-minor"
               >
-                {ContactInfo.No}
+                {ContactInfo.mail}
               </button>
             </a>
           </div>
@@ -100,7 +101,9 @@ const page = () => {
             <Image
               src={`${contentData.h3Image}`}
               className="h-[350px] w-full rounded-lg border object-cover shadow-lg"
-              alt={contentData.h3Image.split("/").pop()?.split(".")[0] || "image"}
+              alt={
+                contentData.h3Image.split("/").pop()?.split(".")[0] || "image"
+              }
               width={1000}
               height={500}
             />
