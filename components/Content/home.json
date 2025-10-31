@@ -2,7 +2,7 @@
   "metaTitle": "Junk Removal & Hauling Expert in Roseville, MI 48066",
   "metaDescription": "Need reliable junk removal in Roseville? Our expert hauling team offers fast, affordable, and eco-friendly junk removal services. Call us at (877) 317-4633.",
   "bannerQuote": "",
-  "bannerImage": "banner.jpg",
+  "bannerImage": "https://ik.imagekit.io/serviceproviders/aahaulingroseville.com/banner.jpg",
   "h1Banner": "Trusted Experts for Junk Removal & Hauling Roseville, MI 48066",
   "p1Banner": "#1 Choice for Reliable & Affordable Fencing Services. Transform Your Property with Simcoe Fences in Aurora!",
   "h2": "Top-Rated Junk Removal & Hauling Services in Roseville – Fast, Reliable, and Hassle-Free!",
@@ -45,19 +45,285 @@
   },
   "h3": "",
   "p3": "",
-  "h3Image": "plumbing-repair-service.jpg",
+  "h3Image": "",
   "faq": [
     {
-      "ques": "How long does it take to install a fence?",
-      "ans": "Installation timelines vary depending on the size and complexity of the project, but most fences can be completed within a few days. With our expertise and commitment to excellence, Simcoe Fences ensures your project is completed on time, tailored to its specific requirements."
-    }
-  ],
-  "testimonials": [
+      "FAQ": "What types of junk do you remove in [location]?",
+      "Answer": "We remove furniture, appliances, electronics, yard waste, construction debris, and more in [location]. Contact us for specific item inquiries."
+    },
     {
-      "id": 1,
-      "name": "",
-      "content": "When we decided to replace our old wooden fence, we didn’t know where to start. Simcoe Fences guided us through every step, from selecting the perfect design to the final installation. Now our backyard looks amazing."
+      "FAQ": "Do you offer same-day junk removal in [location]?",
+      "Answer": "Yes, we offer same-day junk removal in [location] based on availability. Call us early to secure a same-day appointment."
+    },
+    {
+      "FAQ": "How much does junk removal cost in [location]?",
+      "Answer": "Junk removal costs in [location] depend on the volume, weight, and type of items. Contact us for a free estimate."
+    },
+    {
+      "FAQ": "What items cannot be removed?",
+      "Answer": "We cannot remove hazardous materials, chemicals, paints, asbestos, or medical waste. Check local regulations for proper disposal options."
+    },
+    {
+      "FAQ": "Do I need to prepare my junk before pickup?",
+      "Answer": "No preparation is necessary, but separating items or placing them in an accessible area can speed up the process."
+    },
+    {
+      "FAQ": "Do you recycle or donate items in [location]?",
+      "Answer": "Yes! We donate reusable items to local charities and recycle whenever possible in [location] to reduce landfill waste."
+    },
+    {
+      "FAQ": "Can you remove heavy or bulky items?",
+      "Answer": "Absolutely! We remove sofas, refrigerators, mattresses, hot tubs, and more. Our team handles all the heavy lifting."
+    },
+    {
+      "FAQ": "Do you provide commercial junk removal services in [location]?",
+      "Answer": "Yes, we offer commercial junk removal services in [location] for offices, warehouses, retail stores, and construction sites."
+    },
+    {
+      "FAQ": "What areas do you serve in [location]?",
+      "Answer": "We serve all neighborhoods in [location] and surrounding areas. Contact us to confirm service availability in your area."
+    },
+    {
+      "FAQ": "How do I schedule a junk removal service in [location]?",
+      "Answer": "Scheduling junk removal in [location] is easy! Call us or book online for a convenient pickup time."
+    },
+    {
+      "FAQ": "Can you remove hazardous waste?",
+      "Answer": "No, we do not handle hazardous waste. Contact your local waste management facility for proper disposal options."
+    },
+    {
+      "FAQ": "Is there a weight limit for junk removal in [location]?",
+      "Answer": "We do have a weight limit, but it varies by service. Contact us in [location] for details on heavy item removal."
+    },
+    {
+      "FAQ": "Do you remove construction debris in [location]?",
+      "Answer": "Yes, we remove construction debris in [location], including drywall, wood, concrete, and scrap materials."
+    },
+    {
+      "FAQ": "How do you dispose of the junk you collect?",
+      "Answer": "We prioritize eco-friendly disposal methods, recycling and donating whenever possible to minimize waste in [location]."
+    },
+    {
+      "FAQ": "Do you offer recurring junk pickup services in [location]?",
+      "Answer": "Yes, we offer scheduled junk pickup services in [location] for property managers, businesses, and homeowners."
+    },
+    {
+      "FAQ": "Do I need to be present for the junk removal service?",
+      "Answer": "You donâ€™t need to be present if we can access the junk. Just let us know in advance, and weâ€™ll take care of everything."
+    },
+    {
+      "FAQ": "Do you provide estate and foreclosure cleanouts in [location]?",
+      "Answer": "Yes, we provide estate, foreclosure, and hoarding cleanouts in [location]. We handle full property cleanouts efficiently."
+    },
+    {
+      "FAQ": "Can you remove junk from inside my home or office?",
+      "Answer": "Yes! Our team can remove junk from basements, attics, garages, and offices in [location] without you lifting a finger."
+    },
+    {
+      "FAQ": "What payment methods do you accept in [location]?",
+      "Answer": "We accept cash, credit/debit cards, and digital payments for junk removal services in [location]."
+    },
+    {
+      "FAQ": "Do you offer bulk discounts for large junk removal projects?",
+      "Answer": "Yes, we offer discounts for large junk removal projects in [location]. Contact us for bulk pricing options."
     }
   ],
+  "affordableWidget": {
+    "title": " Trusted Junk Removal & Hauling Services in Roseville",
+    "description": "Need reliable junk removal solutions? Our team offers fast, professional, and affordable junk removal and hauling services. Whether it’s residential cleanouts, commercial debris removal, or construction site cleanup, we’ve got you covered. Call now for expert service you can trust!",
+    "ctaText": "Call Now",
+    "cards": [
+      {
+        "title": "Affordable Junk Removal Solutions",
+        "description": "We offer cost-effective junk removal services tailored to your budget, ensuring high-quality workmanship at competitive prices."
+      },
+      {
+        "title": "Comprehensive Hauling Services",
+        "description": "From minor cleanouts to major hauling projects, we provide a full range of services to meet all your needs."
+      },
+      {
+        "title": "Prompt & Reliable Service",
+        "description": "Our team ensures quick response times and efficient service, keeping your property clean and clutter-free without delays."
+      }
+    ]
+  },
+  "processWidget": {
+    "title": "Our 4-Step Junk Removal Process",
+    "description": "",
+    "steps": [
+      {
+        "title": "Step 1: Schedule Your Pickup",
+        "description": "Call or book online for a convenient appointment."
+      },
+      {
+        "title": "Step 2: Get a Free Quote",
+        "description": "Upfront, no-obligation pricing with no hidden fees."
+      },
+      {
+        "title": "Step 3:  We Do the Heavy Lifting",
+        "description": "Our team removes and loads everything for you."
+      },
+      {
+        "title": "Step 4: Eco-Friendly Disposal",
+        "description": "We recycle, donate, and dispose of junk responsibly."
+      }
+    ]
+  },
+  "hourCtaWidget": {
+    "title": "Ready to Clear the Clutter?<br/> Contact Us Today!"
+  },
+  "reviews": [
+  {
+    "Review": "Last week, I needed junk removal in [location] before moving. Their team arrived on time, hauled everything quickly, and even swept up after! The process was seamless, and I couldn't believe how easy they made it."
+  },
+  {
+    "Review": "After a major home cleanout in [location], I had piles of unwanted furniture and trash. Their junk hauling service was efficient, affordable, and stress-free. Highly recommended!"
+  },
+  {
+    "Review": "Clutter was piling up in my garage, and I finally called for junk pickup in [location]. In just an hour, my space was cleared! Fast, reliable, and worth every penny."
+  },
+  {
+    "Review": "Had an estate cleanout in [location] and needed professionals to handle the job. They removed old furniture, appliances, and more with care and efficiency. Amazing service!"
+  },
+  {
+    "Review": "Renovation left my yard full of debris in [location]. Their hauling service cleared it all in no time! Professional, friendly, and handled everything perfectly."
+  },
+  {
+    "Review": "Moving out of my office in [location] left us with tons of junk. They removed desks, chairs, and electronics effortlessly. The place looked spotless when they finished."
+  },
+  {
+    "Review": "A recent storm left a mess of fallen branches and debris in [location]. Their storm debris removal service was a lifesaver! Quick, hassle-free, and affordable."
+  },
+  {
+    "Review": "I was dealing with an old mattress and didn't know how to dispose of it in [location]. Their mattress disposal service was convenient and eco-friendly!"
+  },
+  {
+    "Review": "Construction debris was everywhere after our remodel in [location]. Their dumpster rental service made cleanup easy, and the pickup was right on schedule."
+  },
+  {
+    "Review": "Had to get rid of an old fridge and washer in [location]. Their appliance disposal service was fast and efficient. No heavy lifting on my part!"
+  },
+  {
+    "Review": "Yard waste was cluttering my backyard in [location]. Their landscaping waste disposal team took care of it in minutes. My yard looks great again!"
+  },
+  {
+    "Review": "Needed an entire property cleanout in [location] after a tenant moved out. They handled everything from furniture to trash with no hassle. Five stars!"
+  },
+  {
+    "Review": "Old electronics were piling up in my garage in [location]. Their electronic disposal service made it easy to recycle everything responsibly."
+  },
+  {
+    "Review": "Too much junk in my attic in [location]? Their team cleared it out quickly, leaving me with so much extra space. Couldn't be happier!"
+  },
+  {
+    "Review": "Hired them for trash disposal in [location], and they exceeded expectations. They arrived on time and removed everything quickly. Super professional team!"
+  },
+  {
+    "Review": "Bulk junk was taking over my basement in [location]. Their junk pickup service made everything disappear in one visit. Highly recommended!"
+  },
+  {
+    "Review": "Needed furniture removal in [location] before redecorating. They were on time, careful, and even donated items in good condition. Fantastic service!"
+  },
+  {
+    "Review": "Garage cleanout in [location] was overwhelming, but they made it easy. Quick, hassle-free, and affordable service!"
+  },
+  {
+    "Review": "Had an old couch I needed gone in [location]. Their furniture disposal service was super fast, and they even made sure to recycle it properly."
+  },
+  {
+    "Review": "Spring cleaning turned into a major junk purge in [location]. Their junk removal service made it effortless. I'll definitely use them again!"
+  },
+  {
+    "Review": "Old appliances were cluttering my storage in [location]. Their appliance disposal was so simple and eco-friendly. Highly recommend!"
+  },
+  {
+    "Review": "A rental property I manage in [location] needed a deep cleanout. Their team handled everything, leaving the unit spotless and ready for new tenants."
+  },
+  {
+    "Review": "Storm debris cleanup in [location] was much easier thanks to their quick response. No more fallen branches or scattered trash!"
+  },
+  {
+    "Review": "I had no idea how to get rid of my old hot tub in [location]. Their junk removal team made it disappear in no time!"
+  },
+  {
+    "Review": "Needed bulk trash removed from my business in [location]. Their commercial junk removal was quick, affordable, and thorough!"
+  },
+  {
+    "Review": "After replacing my fence, I was left with a pile of scrap wood in [location]. Their hauling service cleared everything out with ease."
+  },
+  {
+    "Review": "Clutter from years of storage was taking up space in [location]. Their junk removal service gave me back my home!"
+  },
+  {
+    "Review": "Tenant left behind a mess in my rental unit in [location]. Their property cleanout service took care of everything!"
+  },
+  {
+    "Review": "I booked their junk pickup in [location] for an estate cleanout. The team was professional, efficient, and handled everything with care."
+  },
+  {
+    "Review": "Their dumpster rental in [location] made my renovation cleanup stress-free. Drop-off and pickup were right on time!"
+  },
+  {
+    "Review": "Last month, I had a basement full of junk in [location]. Their junk removal service was fast, and the team was super friendly. Now, I finally have space again!"
+  },
+  {
+    "Review": "I needed an urgent junk pickup in [location] before my move. They arrived the same day, hauled everything efficiently, and even cleaned up after. Impressive service!"
+  },
+  {
+    "Review": "Due to a recent renovation in [location], my yard was cluttered with debris. Their hauling service cleared everything out quickly, saving me hours of work."
+  },
+  {
+    "Review": "Last week, I called for appliance disposal in [location]. They safely removed my old refrigerator and washer without damaging my floors. Smooth and easy process!"
+  },
+  {
+    "Review": "My garage was a disaster zone in [location]. Their team cleared years of clutter in just one visit. Can't believe how much space I have now!"
+  },
+  {
+    "Review": "I was dreading my rental property cleanout in [location], but their team handled everything! Fast, professional, and stress-free experience."
+  },
+  {
+    "Review": "A pile of old furniture in [location] was taking over my backyard. Their furniture disposal service took care of it all without a hassle."
+  },
+  {
+    "Review": "Last month, my business needed bulk trash removal in [location]. They cleared everything out efficiently and left the space spotless."
+  },
+  {
+    "Review": "Storm debris cleanup in [location] was a nightmare until I called them. They handled everything quickly and at a great price."
+  },
+  {
+    "Review": "I needed to get rid of an old mattress in [location] but didn't know where to start. Their team handled the disposal properly, ensuring it was recycled."
+  },
+  {
+    "Review": "Last week, I finally tackled my attic cleanout in [location]. Their junk removal team made the process so easy! Highly recommend."
+  },
+  {
+    "Review": "My office in [location] had years of old electronics piling up. Their electronic disposal service was exactly what we needed to clear the space."
+  },
+  {
+    "Review": "Due to home renovations in [location], I had tons of debris. Their dumpster rental made cleanup a breeze! Drop-off and pickup were on time."
+  },
+  {
+    "Review": "I didn't know how to get rid of my hot tub in [location]. Their junk removal service took care of it, and I didn't lift a finger!"
+  },
+  {
+    "Review": "After my tenant left a mess in [location], I called them for a property cleanout. They handled everything quickly and professionally."
+  },
+  {
+    "Review": "A backyard filled with tree branches and debris after a storm in [location] was overwhelming. Their team cleaned it up in no time!"
+  },
+  {
+    "Review": "I needed same-day junk removal in [location], and they delivered! Fast response, great service, and fair pricing."
+  },
+  {
+    "Review": "Old carpets, furniture, and junk had been piling up in my home in [location]. Their junk hauling team cleared it all out efficiently!"
+  },
+  {
+    "Review": "Last week, I called for construction debris removal in [location]. They cleared the site, making it ready for the next phase."
+  },
+  {
+    "Review": "Due to a foreclosure cleanup in [location], I needed a professional team. They handled everything flawlessly, leaving the property spotless!"
+  }
+]
+,
   "mapLink": "https://maps.google.com/maps?q=Roseville+MI&t=&z=12&ie=UTF8&iwloc=&output=embed"
 }

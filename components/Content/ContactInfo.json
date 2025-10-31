@@ -10,5 +10,9 @@
   "location": "Roseville, MI",
   "zipCode": "48066",
   "bannerImage": "https://ik.imagekit.io/serviceproviders/aahaulingroseville.com/banner.jpg?updatedAt=1744108335388",
-  "logo": "https://ik.imagekit.io/serviceproviders/aahaulingroseville.com/logo.png?updatedAt=1744108343666"
+  "logoImage": "https://ik.imagekit.io/serviceproviders/aahaulingroseville.com/logo.png?updatedAt=1744108343666",
+  "favicon": "",
+  "googleAnalytics": "",
+  "main": "#056df9",
+  "minor": "#0356c5"
 }
