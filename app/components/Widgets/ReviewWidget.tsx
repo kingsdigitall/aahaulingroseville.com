@@ -92,7 +92,7 @@ const ReviewWidget: React.FC<ReviewWidgetProps> = ({ value = "" }) => {
           >
             <div className="flex items-center justify-center">
               <Image
-                src="https://ik.imagekit.io/h7rza8886p/5Star.webp?updatedAt=1746874235628"
+                src="https://ik.imagekit.io/serviceproviders/aahaulingroseville.com/5Star.png"
                 alt="review"
                 width={1000}
                 height={500}
